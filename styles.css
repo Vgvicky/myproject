@@ -1,0 +1,346 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2.6;
+    background-color: rgb(8, 8, 8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hwb(0 91% 5%);
+    /* margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: background-image 0.5s ease-in-out;
+    background-size: cover;
+    background-position: center; */
+}
+
+header {
+    background-color:rgba(25, 0, 255, 0.727);
+    padding: 10px 0;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+header nav ul li a:hover {
+    background: linear-gradient(100deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 20px;
+    padding: 10px;
+    color: #000000;
+}
+
+#hero {
+    background: linear-gradient(100deg, rgba(41, 8, 253, 0.881) 0%, rgb(92, 253, 6) 50%, rgb(3, 242, 250) 100%);
+    padding: 200px 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    animation: slide-background 15s infinite;
+}
+@keyframes slide-background {
+    0% {
+        background-image: url('https://dlcdnrog.asus.com/rog/media/1589570302548.webp');
+    }
+    25% {
+        background-image: url('vg1.jpg');
+    }
+    50% {
+        background-image: url('vg2.jpg');
+    }
+    75% {
+        background-image: url('vg3.jpg');
+    }
+    100% {
+        background-image: url('vg4.jpg');
+    }
+}
+
+#hero .cta-button {
+    background-color: hsl(100, 25%, 95%);
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+.hero-content .see{
+    margin: 40px;
+}
+#hero .cta-button:hover{
+    background-color: #000000;
+    color: #fff;
+    
+}
+#hero .cta-button{
+    box-shadow: #ddd;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);/*, -2px -2px 10px rgba(0, 0, 0, 0.3);box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);*/
+}
+.hero-content h1
+{
+    font-size: 70px;
+    width: 1080px;
+    /* margin-left: 500px; */
+    margin-left: 200px;
+    color:whitesmoke;
+    text-shadow: 
+                0 0 5px #0019fa,    /* Pink Glow */
+                0 0 10px hsl(229, 100%, 50%),
+                0 0 20px #0421ff,
+                0 0 30px #1b02ff,
+                0 0 40px #1008faf9,
+                0 0 50px #0d00ff,
+                0 0 75px #0400ff;
+}
+
+.hero-content p{
+    color: hsl(0, 73%, 97%);
+    font-size: 30px;
+    text-shadow: 
+                0 0 5px #0019fa,    /* Pink Glow */
+                0 0 10px hsl(229, 100%, 50%),
+                0 0 20px #0421ff,
+                0 0 30px #1b02ff,
+                0 0 40px #1008faf9,
+                0 0 50px #0d00ff,
+                0 0 75px #0400ff;
+}
+
+/* .hero-content h1:hover
+{
+    background: #0a0a0a;
+    border-radius: 100px;
+    align-items: center;
+    background: linear-gradient(100deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor:pointer;
+} */
+
+#projects, #contact {
+
+    padding: 20px 20px;
+    text-align: center;
+}
+#projects h2{
+    padding-bottom: 30px;
+    font-size: 45px;
+    font-weight: lighter;
+    text-shadow: 
+                0 0 5px #f92a2a,    /* Pink Glow */
+                0 0 10px #f92a2a,
+                0 0 20px #f92a2a,
+                0 0 30px #f92a29,
+                0 0 40px #f92a2af9,
+                0 0 50px #f92a2a,
+                0 0 75px #f92a2a;
+}
+/* #projects h2:hover{
+       color: aqua;
+
+} */
+
+#about
+{
+    padding: 50px 100px ;
+    text-align: center;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 
+                0 0 5px #2a3bf9,    /* Pink Glow */
+                0 0 10px #342af9,
+                0 0 20px #312af9,
+                0 0 30px #2a53f9,
+                0 0 40px #2e2af9,
+                0 0 50px #502af9,
+                0 0 75px #2a46f9;
+}
+#personal-info-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#personal-info-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#personal-info-container p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: linear-gradient(50deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    color: #090505;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-card img {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+#contact h2 {
+    text-shadow: 
+                0 0 5px #2ac9f9,    /* Pink Glow */
+                0 0 10px #2ac9f9,
+                0 0 20px #2ac9f9,
+                0 0 30px #2ac9f9,
+                0 0 40px #2ac9f9,
+                0 0 50px #2ac9f9,
+                0 0 75px #2ac9f9;
+    
+}
+
+#contact form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 
+                0 0 5px #f92a2a,    /* Pink Glow */
+                0 0 10px #f92a2a,
+                0 0 20px #f92a2a,
+                0 0 30px #f92a29,
+                0 0 40px #f92a2af9,
+                0 0 50px #f92a2a,
+                0 0 75px #f92a2a;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#contact form button {
+    background: linear-gradient(50deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:linear-gradient(50deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+}
+.card1, .card2{
+    transition: box-shadow 2s, transform 3s;
+}
+.card1:hover, .card2:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 8px 0 #f20808, 0 8px 20px 0 #f70909;
+    
+}
+
+.slider {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    align-content: center;
+    margin: auto 350px;
+    box-shadow: 0 10px 8px 0 hsl(232, 96%, 48%), 0 8px 20px 0 hsl(250, 94%, 50%);;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    min-height: 200%;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.controls label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(vg1.jpg);
+    padding: 15px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: white;
+}
+
+
+.controls label:nth-child(1) {
+    left: 10px;
+}
+
+.controls label:nth-child(2) {
+    right: 10px;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
